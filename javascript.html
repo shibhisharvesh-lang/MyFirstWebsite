@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+    <body><p id="Hello">Hello World!</p>
+        <p id="Java">Hello Javascript!</p>
+     <button onclick="changeText()">Hello</button>
+     <button onclick="changeText()">Java</button>
+     <script>
+        function changeText() {
+            document.getElementById("Hello").innerHTML = "Hello Javascript!";
+            document.getElementById("Java").innerHTML = "Goodbye Javascript!";
+        }
+     </script>   
+    </body>
+</html>

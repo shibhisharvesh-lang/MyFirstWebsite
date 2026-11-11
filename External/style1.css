@@ -1,0 +1,48 @@
+/* Base styles: designed for a small screen */
+/* Base styles: designed for a small screen */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background: #fbf9f4;
+}
+
+header {
+    padding: 20px;
+    background: rgb(228, 154, 5);
+    color: white;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+}
+
+.card {
+    background: rgb(8, 231, 19);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* At 600px or wider: use two columns */
+@media (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* At 900px or wider: use three columns */
+@media (min-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> Javascript</title>
+        <label for="textbox">textbox:</label>
+<input type="text" id="textbox" name="textbox" placeholder="Enter any text">
+ <button onclick="myFunction()">Click Me!</button>
+ <p id="Sample"> Sample Text</p>
+
+        </head>
+        <body>
+            <script>
+              function myFunction() {
+                var x = document.getElementById("textbox").value;
+                document.getElementById("Sample").innerHTML = x;
+              }
+            </script>
+            
+               
+            
+        </body>
+</html>

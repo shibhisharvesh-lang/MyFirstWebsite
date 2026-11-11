@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            javascript
+        </title>
+    </head>
+    <body>
+        <script>
+            function createcounter(){
+                let count=0;
+                return function(){
+                    count=count+1;
+                    console.log(count);
+                };
+            }
+            let counter=createcounter();
+            counter();
+            counter();
+            counter();
+        </script>
+    </body>
+</html>
